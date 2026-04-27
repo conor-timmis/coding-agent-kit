@@ -1,14 +1,26 @@
-# agent-starter-kit
+# Coding Agent Starter Kit
 
-Installable starter kit for AI coding agents, inspired by [Karpathy-style coding behavior](https://github.com/forrestchang/andrej-karpathy-skills) and [claude-mem](https://github.com/thedotmack/claude-mem).
+Your AI coding agent is already smart. This makes it *reliable*.
 
-## What you get
+Out of the box, most AI agents forget everything between sessions, go off on tangents, and over-engineer simple tasks. The Coding Agent Starter Kit gives your agent a memory, a set of battle-tested behavioral rules, and the discipline to actually follow your lead. This is your Starter Kit, inspired by [Karpathy-style coding behavior](https://github.com/forrestchang/andrej-karpathy-skills) & [claude-mem](https://github.com/thedotmack/claude-mem).
 
-- Behavioral rules: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution
-- Memory system: file-based memory for decisions, patterns, context, and feedback
-- Hooks: `SessionStart` surfaces relevant context, `PostToolUse` logs notable file changes
+One command. Works with every major AI coding CLI.
+
+## What changes
+
+**Before:** Your agent starts every session cold. It doesn't know your stack, your decisions, or what you tried last week. It writes 200 lines when 50 would do. It "helps" by refactoring things you didn't ask it to touch.
+
+**After:** Your agent remembers. It asks before assuming. It makes the smallest change that solves the problem, and it stops when the goal is met.
+
+Specifically, you get:
+
+- **Behavioral rules** — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. No more runaway rewrites.
+- **Persistent memory** — Decisions, patterns, context, and feedback survive across sessions. Tell it once, it remembers.
+- **Automatic hooks** — `SessionStart` injects relevant memory so the agent hits the ground running. `PostToolUse` logs notable file changes so nothing gets lost.
 
 ## Supported CLIs
+
+Works wherever you code:
 
 - Claude Code
 - Cursor
@@ -19,13 +31,13 @@ Installable starter kit for AI coding agents, inspired by [Karpathy-style coding
 
 ## Install
 
-Global install:
+One command installs everywhere:
 
 ```bash
 npx agent-starter-kit install
 ```
 
-Install for one CLI:
+Or pick your CLI:
 
 ```bash
 npx agent-starter-kit install --target=claude
@@ -35,13 +47,13 @@ npx agent-starter-kit install --target=copilot
 npx agent-starter-kit install --target=codex
 ```
 
-Current project only:
+Just this project:
 
 ```bash
 npx agent-starter-kit install --project
 ```
 
-Manual install (copy files from this repo):
+Prefer to do it manually? Copy these files from the repo:
 
 - Claude Code: `.claude-plugin/`, `skills/`, `hooks/`, `CLAUDE.md`
 - Cursor: `.cursor/rules/agent-starter-kit.mdc`
@@ -52,26 +64,34 @@ Manual install (copy files from this repo):
 
 ## Memory
 
-Memory location:
+Your agent's memory lives here:
 
-- Global: `~/.agent-starter-kit/memory/`
+- Global (all projects): `~/.agent-starter-kit/memory/`
 - Per-project: `.agent-memory/`
 
-Example prompts:
+Just talk to it naturally:
 
 > "Remember that we use Zod for all validation in this project."
 >
 > "What do you remember about the auth architecture?"
 
-Categories:
+Memory is organized into:
 
-- `decisions/`
-- `patterns/`
-- `context/`
-- `feedback/`
+- `decisions/` — why you built things the way you did
+- `patterns/` — solutions that worked, ready to reuse
+- `context/` — project background, constraints, team conventions
+- `feedback/` — corrections so the agent doesn't make the same mistake twice
 
-The `session-start` hook injects relevant memory at the start of each session.
+At the start of each session, the `session-start` hook automatically pulls in what's relevant — so you spend less time re-explaining and more time shipping.
 
 ## License
 
 MIT
+
+---
+
+<div align="center">
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/conort)
+
+</div>
