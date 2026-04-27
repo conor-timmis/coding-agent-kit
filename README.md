@@ -91,7 +91,6 @@ MIT
 ---
 
 <div align="center">
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/conort)
-
+<p>Fancy treating me to a Coffee?</p>
+<a href="https://ko-fi.com/conort"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a>
 </div>
