@@ -1,0 +1,32 @@
+{
+  "name": "agent-starter-kit",
+  "id": "agent-starter-kit",
+  "owner": {
+    "name": "Conor Timmis"
+  },
+  "metadata": {
+    "description": "Starter kit for AI agents — Karpathy coding guidelines + cross-session file-based memory. Works with Claude Code, Cursor, Windsurf, Copilot, and Codex.",
+    "version": "1.0.0",
+    "homepage": "https://github.com/conortimmis/agent-starter-kit"
+  },
+  "plugins": [
+    {
+      "name": "agent-starter-kit",
+      "source": "./",
+      "description": "Karpathy behavioral guidelines (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) + lightweight file-based memory persistence across sessions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Conor Timmis"
+      },
+      "keywords": [
+        "guidelines",
+        "memory",
+        "karpathy",
+        "best-practices",
+        "starter-kit",
+        "productivity"
+      ],
+      "category": "workflow"
+    }
+  ]
+}

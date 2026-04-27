@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/install.cjs --help)",
+      "Bash(node scripts/install.cjs)"
+    ]
+  }
+}

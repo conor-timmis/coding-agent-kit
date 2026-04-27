@@ -1,0 +1,19 @@
+{
+  "name": "agent-starter-kit",
+  "description": "Karpathy behavioral guidelines + file-based memory system for AI coding sessions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Conor Timmis"
+  },
+  "license": "MIT",
+  "keywords": ["guidelines", "memory", "karpathy", "best-practices", "starter-kit"],
+  "skills": [
+    "./skills/karpathy-guidelines",
+    "./skills/memory"
+  ],
+  "hooks": {
+    "SessionStart": "node hooks/session-start.cjs",
+    "SessionEnd": "node hooks/session-end.cjs",
+    "PostToolUse": "node hooks/post-tool-use.cjs"
+  }
+}
