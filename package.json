@@ -1,0 +1,48 @@
+{
+  "name": "agent-starter-kit",
+  "version": "1.0.0",
+  "description": "Installable AI agent starter kit — Karpathy behavioral guidelines + file-based memory, for Claude Code, Cursor, Windsurf, Copilot, and Codex",
+  "author": "Conor Timmis",
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "copilot",
+    "codex",
+    "ai-agent",
+    "plugin",
+    "memory",
+    "karpathy",
+    "guidelines",
+    "starter-kit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conortimmis/agent-starter-kit.git"
+  },
+  "homepage": "https://github.com/conortimmis/agent-starter-kit#readme",
+  "type": "commonjs",
+  "bin": {
+    "agent-starter-kit": "./scripts/install.cjs"
+  },
+  "files": [
+    ".claude-plugin",
+    ".codex-plugin",
+    ".cursor",
+    ".windsurf",
+    ".github/copilot-instructions.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "skills",
+    "hooks",
+    "scripts/install.cjs"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "install-plugin": "node scripts/install.cjs"
+  }
+}
