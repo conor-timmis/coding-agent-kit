@@ -20,12 +20,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/conortimmis/agent-starter-kit.git"
+    "url": "git+https://github.com/conortimmis/agent-starter-kit.git"
   },
   "homepage": "https://github.com/conortimmis/agent-starter-kit#readme",
   "type": "commonjs",
   "bin": {
-    "agent-starter-kit": "./scripts/install.cjs"
+    "agent-starter-kit": "scripts/install.cjs"
   },
   "files": [
     ".claude-plugin",
@@ -49,5 +49,8 @@
     "install-plugin": "node scripts/install.cjs",
     "release:check": "npm pack --dry-run",
     "release:publish": "npm publish"
+  },
+  "dependencies": {
+    "agent-starter-kit": "^1.0.1"
   }
 }
