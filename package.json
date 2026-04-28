@@ -42,7 +42,12 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "install-plugin": "node scripts/install.cjs"
+    "install-plugin": "node scripts/install.cjs",
+    "release:check": "npm pack --dry-run",
+    "release:publish": "npm publish"
   }
 }
