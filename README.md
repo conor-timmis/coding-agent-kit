@@ -18,6 +18,13 @@ Specifically, you get:
 - **Persistent memory** — Decisions, patterns, context, and feedback survive across sessions. Tell it once, it remembers.
 - **Automatic hooks** — `SessionStart` injects relevant memory so the agent hits the ground running. `PostToolUse` logs notable file changes so nothing gets lost.
 
+## Usage Statistics
+
+- `claude-mem` documents **~10x token savings** for its 3-layer memory retrieval flow.
+- This starter kit includes additional behavioral rules, so those savings are **not guaranteed** in every workflow.
+
+For a defensible project-specific number, run a 1-week before/after benchmark using the same task mix and model settings.
+
 ## Supported CLIs
 
 Works wherever you code:
