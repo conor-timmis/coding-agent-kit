@@ -1,6 +1,6 @@
 {
   "name": "agent-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Installable AI agent starter kit — Karpathy behavioral guidelines + file-based memory, for Claude Code, Cursor, Windsurf, Copilot, and Codex",
   "author": "Conor Timmis",
   "license": "MIT",
