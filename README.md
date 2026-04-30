@@ -76,25 +76,7 @@ Prefer to do it manually? Copy these files from the repo:
 - Codex: `.codex-plugin/plugin.json`, `AGENTS.md`
 - Generic: `CLAUDE.md` or `AGENTS.md`
 
-## Publish to npm
-
-Use this from the repo root when you are ready to ship a new version:
-
-```bash
-# 1) log in once per machine
-npm login
-
-# 2) bump version (patch/minor/major)
-npm version patch
-
-# 3) verify package contents
-npm run release:check
-
-# 4) publish to npm
-npm run release:publish
-```
-
-After publish, users can install with:
+Users can install with:
 
 ```bash
 npm install agent-starter-kit
